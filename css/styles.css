@@ -18,6 +18,7 @@ main {
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 .wrapper3d {
   width: 157px;
