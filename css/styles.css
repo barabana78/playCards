@@ -1,0 +1,96 @@
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: auto;
+  max-width: 100%;
+}
+main {
+  background: green url("../images/mainBG.jpg") repeat 0 0;
+}
+.wrapper {
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row {
+  display: flex;
+}
+.wrapper3d {
+  width: 157px;
+  height: 234px;
+  position: relative;
+  margin: auto;
+  perspective: 800px;
+}
+.wrapper3d > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 157px;
+  height: 234px;
+  transform-style: preserve-3d;/*для того чтобы браузер воспринимал обект как трехмерный*/
+  transition: 0.4s ease-in;
+  transition-property: transform, background;
+}
+.wrapper3d .back {
+  background: url("../images/mainBG.jpg") repeat 0 0;
+  /**/
+  backface-visibility: hidden;
+  z-index: 1;
+}
+.wrapper3d .front {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 1px;
+  border-radius: 10px;
+  background-color: #fff;
+  /**/
+  transform: rotateY(180deg) translateZ(0);
+  backface-visibility: hidden;
+}
+.wrapper3d:hover .back {
+  transform: rotateY(180deg);
+}
+.wrapper3d:hover .front {
+  transform: rotateY(0deg);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2px;
+}
+.column-reverse {
+  transform: rotate(180deg);
+}
+.center {
+  justify-content: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.padding-top {padding-top: 50px}
+.img-none {width: 29px;}
+span {color: red;}
+.rotate {
+  transform: rotate(180deg);
+}
+.small {
+  width: 50%;
+}
+.qbg {
+  background: url("../images/QBG.jpg") no-repeat center center;
+  width: 100%;
+}
+.jbg {
+  background: url("../images/JBG.jpg") no-repeat center center;
+  width: 100%;
+}
+.kbg {
+  background: url("../images/KBG.jpg") no-repeat center center;
+  width: 100%;
+}
