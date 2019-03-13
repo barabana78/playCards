@@ -9,6 +9,32 @@
 <body>
 <main>
   <div class="wrapper">
+    <!--MODAL-->
+    <button onclick="showModal()">click</button>
+    <div id="modal" class="modal">
+      <div class="inner">
+        <div class="wrapper3d">
+          <div class="front">
+            <div class="column">6<img class="small" src="./images/spade.png" alt="spade"></div>
+            <div class="column space-around">
+              <img src="./images/spade.png" alt=spade">
+              <img src="./images/spade.png" alt="spade">
+              <img class="rotate" src="./images/spade.png" alt="spade">
+            </div>
+            <div class="column img-none"></div>
+            <div class="column space-around">
+              <img src="./images/spade.png" alt="spade">
+              <img src="./images/spade.png" alt="spade">
+              <img class="rotate" src="./images/spade.png" alt="spade">
+            </div>
+            <div class="column column-reverse">6<img class="small" src="./images/spade.png" alt="spade"></div>
+          </div>
+          <div class="back"><img src="./images/back3.png" alt="back"></div>
+        </div>
+      </div>
+    </div>
+    <div onclick="clouseModal()" class="overlay"></div>
+
     <!--ROW1-->
   <div class="row">
 <!--ACE HEART-->
@@ -616,8 +642,7 @@
     <!--/ROW 6-->
   </div>
 
-  <!--MODAL-->
-  <div
 </main>
+<script src="./js/main.js"></script>
 </body>
 </html>
