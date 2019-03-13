@@ -34,12 +34,11 @@ main {
   width: 157px;
   height: 234px;
   transform-style: preserve-3d;/*для того чтобы браузер воспринимал обект как трехмерный*/
-  transition: 0.4s ease-in;
+  transition: 0.5s ease-in;
   transition-property: transform, background;
 }
 .wrapper3d .back {
   background: url("../images/mainBG.jpg") repeat 0 0;
-  /**/
   backface-visibility: hidden;
   z-index: 1;
 }
@@ -49,9 +48,7 @@ main {
   padding: 5px 1px;
   border-radius: 10px;
   background-color: #fff;
-  /**/
   transform: rotateY(180deg) translateZ(0);
-  backface-visibility: hidden;
 }
 .wrapper3d:hover .back {
   transform: rotateY(180deg);
